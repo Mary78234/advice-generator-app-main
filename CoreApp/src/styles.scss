@@ -8,6 +8,10 @@
   transform: translate(-50%, -50%);
 }
 
+$button-color: #52FFAB;
+$dark-blue: #212732;
+$gray-blue: #313A4A;
+
 *{
   margin: 0;
   padding: 0;
@@ -15,29 +19,29 @@
 }
 
 body{
-  background-color: #212732;
+  background-color: $dark-blue;
+  font-family: 'Manrope', sans-serif;
 }
 
 main.main-box{
-  font-family: 'Manrope', sans-serif;
   text-align: center;
   max-width: 465px;
   @include center;
   padding: 20px;
-  background-color: #313A4A;
   border-radius: 10px;
+  background-color: $gray-blue;
   box-shadow: 0px 0px 25px #1F2832;
   .title{
-    color: #4BD293;
     font-weight: 200;
     font-size: 12px;
+    color: $button-color;
     margin: 10px 0;
   }
   .text{
     font-size: 28px;
-    color: #D1E7EE;
     font-weight: 400;
     font-size: 28px;
+    color: #D1E7EE;
     margin: 20px 0;
   }
   img{
@@ -45,7 +49,7 @@ main.main-box{
     width: 400px;
   }
   .icon{
-    background-color: #4AD195;
+    background-color: $button-color;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -59,12 +63,13 @@ main.main-box{
     }
   }
   .icon:hover{
-    box-shadow: 0px 0px 25px #4AD195;
+    box-shadow: 0px 0px 25px $button-color;
   }
 }
 
 .attribution { 
-  font-size: 11px; text-align: center; 
+  font-size: 11px; 
+  text-align: center; 
 }
 
 .attribution a { 
