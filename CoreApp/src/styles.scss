@@ -1,5 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;400&display=swap');
 
 *{
   margin: 0;
@@ -7,15 +7,38 @@
   box-sizing: border-box;
 }
 
+body{
+  background-color: #212732;
+}
+
 main.main-box{
-  font-size: 28px;
   font-family: 'Manrope', sans-serif;
-  margin: 10px;
-  background-color: burlywood;
+  text-align: center;
+  max-width: 465px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #313A4A;
   border-radius: 10px;
   color: white;
+  .title{
+    color: #4BD293;
+    font-weight: 200;
+    font-size: 12px;
+    margin: 10px 0;
+  }
+  .text{
+    font-size: 28px;
+    color: #D1E7EE;
+    font-weight: 400;
+    font-size: 28px;
+    margin: 20px 0;
+  }
   img{
-    color: white;
+    color: red;
+    width: 400px;
   }
 }
 
