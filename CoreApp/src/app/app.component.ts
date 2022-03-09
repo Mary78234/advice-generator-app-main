@@ -16,7 +16,7 @@ export class AppComponent implements OnInit{
     this.load();
   }
 
-  private load(){
+  public load(){
     this.adviceService.getAdvice().subscribe(res =>{
       if(res){
         this.advice = res;
